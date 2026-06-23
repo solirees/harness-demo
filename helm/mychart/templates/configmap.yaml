@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: myapp-configmap1
+  name: myapp-configmap
   labels:
-    app: myapp1
+    app: myapp
 data:
   myvalue: {{ .Values.greeting | quote }}
   drink: {{ .Values.favorite.drink | quote  }}
